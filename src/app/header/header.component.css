@@ -1,0 +1,48 @@
+header {
+    background-color: transparent;
+    font-size: 30px;
+    height: 10%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+}
+
+#header-cover {
+    background-color: black;
+    height: 10%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0.7;
+}
+
+header #logo-name-div {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+header #logo-name-div img {
+    width: 95px;
+}
+
+header nav {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    padding: 20px;
+    width: 50%;
+}
+
+header nav a {
+    color: white;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}

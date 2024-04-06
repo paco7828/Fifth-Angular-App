@@ -1,0 +1,11 @@
+<div id="form-container">
+    <h1>Login</h1>
+    <form (submit)="onSubmitLogin()" [formGroup]="loginForm">
+        <label>Email</label>
+        <input type="text" formControlName="email">
+        <label>Password</label>
+        <input type="password" formControlName="password">
+        <input type="submit" value="Login" [disabled]="!loginForm.valid">
+    </form>
+    <a routerLink="/register">Don't have an account?</a>
+</div>

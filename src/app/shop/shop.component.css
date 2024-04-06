@@ -1,0 +1,37 @@
+#shop-container {
+    display: grid;
+    height: 75%;
+    place-items: start center;
+}
+
+#shop-container #shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+#shop-container #shop-items .shop-product {
+    width: 400px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+#shop-container #shop-items .shop-product img {
+    border: 5px solid;
+    width: 350px;
+    height: 350px;
+}
+
+#shop-container #shop-items .shop-product:hover {
+    border: 5px solid red;
+}
+
+#shop-container #shop-items .shop-product a {
+    color: limegreen;
+}
+
+#shop-container #shop-items .shop-product a:hover {
+    cursor: pointer;
+}

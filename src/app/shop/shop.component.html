@@ -1,0 +1,13 @@
+<div id="shop-container">
+    <h1>Products</h1>
+    <div id="shop-items">
+        @for(product of products; track product){
+        <div class="shop-product">
+            <h3>{{product.productName}}</h3>
+            <img src="{{product.productImg}}">
+            <p>{{product.price}}$</p>
+            <a routerLink="/{{product.detailsLink}}">See details</a>
+        </div>
+        }
+    </div>
+</div>
